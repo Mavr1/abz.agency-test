@@ -1,3 +1,5 @@
+@import './variables.scss';
+
 @mixin for-phone-only {
   @media (min-width: 360px) {
     @content;
@@ -16,10 +18,11 @@
   }
 }
 
-@mixin font($fs: 16px, $lh: 1.2, $color: inherit) {
+@mixin font($fw: 400, $fs: 16px, $lh: 1.2, $color: $font-color, $ls: normal) {
   font-family: 'Open Sans';
-  font-weight: 400;
+  font-weight: $fw;
   font-size: $fs;
   line-height: $lh;
   color: $color;
+  letter-spacing: $ls;
 }

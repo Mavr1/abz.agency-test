@@ -1,0 +1,23 @@
+@import '../../helpers/variables.scss';
+@import '../../helpers/mixins.scss';
+
+.buttonBasic {
+  border-radius: 4px;
+  width: 210px;
+  display: block;
+  margin: 0 auto;
+}
+
+.buttonMobile {
+  @extend .buttonBasic;
+  height: 38px;
+  background-color: $primary-color;
+  @include font(600, 16px, auto, #fefefe);
+}
+
+.buttonMobileInvert {
+  @extend .buttonBasic;
+  height: auto;
+  background-color: transparent;
+  @include font(600, 16px, auto, $primary-color);
+}

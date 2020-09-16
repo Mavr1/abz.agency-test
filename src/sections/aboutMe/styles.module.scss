@@ -1,0 +1,34 @@
+@import '../../helpers/mixins.scss';
+
+.aboutMe {
+  padding: 76px 0 78px 0;
+}
+
+.title {
+  @include font(400, 30px, 50px);
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.imageManLaptop {
+  margin-bottom: 42px;
+}
+
+.descriptionWrapper {
+  margin-bottom: 42px;
+}
+
+.subTitle {
+  @include font(400, 24px, 30px);
+  margin-bottom: 26px;
+  text-align: center;
+}
+
+.description {
+  @include font(400, 16px, 24px, #4c4b4b);
+  text-align: justify;
+
+  &:not(:last-child) {
+    margin-bottom: 32px;
+  }
+}

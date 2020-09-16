@@ -1,0 +1,22 @@
+@import '../../helpers/mixins.scss';
+@import '../../helpers/variables.scss';
+
+.requirements {
+  background-image: url('../../assets/banner-photo.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  padding: 74px 0 74px 0;
+}
+
+.title {
+  @include font(400, 30px, 34px, $background-color);
+  text-transform: uppercase;
+  margin-bottom: 28px;
+}
+
+.description {
+  @include font(400, 16px, 24px, $background-color);
+  margin-bottom: 26px;
+}

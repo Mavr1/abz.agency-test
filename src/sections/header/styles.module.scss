@@ -1,0 +1,23 @@
+@import '../../helpers/mixins.scss';
+@import '../../helpers/variables.scss';
+
+.headerContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+}
+
+.logoWrapper {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  margin-right: 8px;
+}
+
+.companyName {
+  @include font(600, 16px, 1.2, $font-color, 3.2px);
+  text-transform: uppercase;
+}
